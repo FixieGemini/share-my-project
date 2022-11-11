@@ -8,7 +8,7 @@ res.render('login')
 
 
 
-// Use withAuth middleware to prevent access to route
+// Use withAuth middleware and renders homepage
 router.get('/homepage', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
@@ -28,8 +28,8 @@ router.get('/homepage', withAuth, async (req, res) => {
   }
 });
 
+//renders login page if not logged in. otherwise render profile
 router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
