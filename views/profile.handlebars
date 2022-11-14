@@ -29,12 +29,12 @@
 
   {{#if projects.length}}
   <div class="col-md-6 project-list">
-    <h3>Shared Projects:</h3>
+    <h3>My Shared Projects:</h3>
 
     {{#each projects as |project|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a href="{{project.link}}">{{project.name}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>

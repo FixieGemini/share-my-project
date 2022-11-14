@@ -3,5 +3,10 @@
     "name": "Share-My-Project",
     "description": "A site for my bootcamp class to share their team projects.",
     "link": "https://github.com/FixieGemini/share-my-project" 
+  },
+  {
+    "name": "Techapedia",
+    "description": "a mockup of a blog website",
+    "link": "https://github.com/Landycodes/Techapedia"  
   }
 ]
