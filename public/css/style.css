@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+    color: #292b2c;
+}
+.home:hover {
+    color: white;
+
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
