@@ -1,32 +1,34 @@
+<div class="bg-light p-5 mt-4 mb-5 rounded">
 <h1>LOGIN</h1>
 <form id="signIn-form">
-    <div>
+  <div class="form-group">
     <label for="username">Username</label>
-    <input id="username" type="text"/>
-    </div>
-    <div>
+    <input type="text" class="form-control" id="username" placeholder="Enter username">
+  </div>
+  <div class="form-group">
     <label for="password">Password</label>
-    <input id="password" type="password"/>
-    </div>
-    <div>
-    <button type="submit">Log In</button>
-    </div>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<br>
+
+<p>-------------------------OR-----------------------</p>
 
 <h1>SIGN UP</h1>
 <form id="signup-form">
-    <div>
-    <label for="newuser">Username</label>
-    <input id="newuser" type="text"/>
-    </div>
-    <div>
+  <div class="form-group">
+    <label for="newuser">New Username</label>
+    <input type="text" class="form-control" id="newuser" placeholder="Enter username">
+  </div>
+  <div class="form-group">
     <label for="newpass">Password</label>
-    <input id="newpass" type="password"/>
-    </div>
-    <div>
-    <button type="submit">Sign Up</button>
-    <p>*Password must contain at least 8 characters</p>
-    </div>
+    <input type="password" class="form-control" id="newpass" placeholder="Password">
+    <small class="form-text text-muted">*password must be at least 6 characters.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+<br>
 
 <script src="/js/login.js"></script>
