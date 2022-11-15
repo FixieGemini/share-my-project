@@ -10,23 +10,34 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Share My Project!</title>
 </head>
-<body class="bg-dark">
-  <div class="">
+<body class="bg-dark" data-barba="wrapper">
+  {{!-- rows for page transition --}}
+  <ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <div>
     <header class="p-2 navbar navbar-secondary bg-secondary justify-content-center flex-column align-items-center">
       {{#if logged_in}}
-       <a class="text-center" href="/homepage"><h1 class="home">Share My Project!</h1></a>
+       <a class="text-center cta" href="/homepage"><h1 class="home">Share My Project!</h1></a>
       {{else}}
       <h1 class="text-dark text-center">Share My Project!</h1>
       {{/if}}
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a class="btn btn-dark" href="/profile">profile</a> |
-        <button class="no-button btn btn-dark" id="logout">logout</button>
+        <a class="btn btn-dark cta" href="/profile">profile</a> |
+       <button class="no-button btn btn-dark cta" id="logout">logout</button>
         {{/if}}
       </nav>
     </header>
-    <main class="d-flex justify-content-center">
+
+
+
+    <main class="d-flex justify-content-center animate" data-barba="container">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
@@ -39,5 +50,9 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  <script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="/css/barba/index.js"></script>
+
 </body>
 </html>
