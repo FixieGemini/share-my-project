@@ -8,33 +8,38 @@
 
 <div class="row mt-4 flex-nowrap">
   <div class="col-md-6 ml-5">
-    <h3>Add a New Project:</h3>
+    <h3>Add a New Project</h3>
 
   <form class="form new-project-form text-light">
       <div class="form-group">
-        <label for="project-name">project name:</label>
+        <label for="project-name">Project name:</label>
         <br>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <input class="form-input" type="text" id="project-name" name="project-name" placeholder="Title" />
       </div>
       <div class="form-group">
-        <label for="project-desc">description:</label>
+        <label for="project-desc">Description:</label>
         <br>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input" id="project-desc" name="project-desc" placeholder="Summarize app"></textarea>
       </div>
+      {{!-- <div class="form-group">
+        <label for="project-desc">Contibuters:</label>
+        <br>
+        <textarea class="form-input" id="project-desc" name="project-desc" placeholder="Who worked on this project?"></textarea>
+      </div> --}}
       <div class="form-group">
         <label for="project-link">Repository link:</label>
         <br>
-        <input type="url" class="form-input" id="project-link" name="project-link"/>
+        <input type="url" class="form-input" id="project-link" name="project-link" placeholder="Github repository link"/>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary project">Create</button>
       </div>
     </form>
   </div>
 
   {{#if projects.length}}
   <div class="col-md-6 project-list">
-    <h3>My Shared Projects:</h3>
+    <h3>My Shared Projects</h3>
 
     {{#each projects as |project|}}
 
@@ -56,4 +61,7 @@
 </div>
 
 <script src="./js/profile.js"></script>
+
+
+
 
