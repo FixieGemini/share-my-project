@@ -41,4 +41,4 @@ THEN the title and link are saved and I am take back to an updated homepage with
 ```
 
 ## Links
-[Heroku](https://dashboard.heroku.com/apps/gentle-taiga-51453)
+[Heroku]https://gentle-taiga-51453.herokuapp.com/
