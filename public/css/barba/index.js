@@ -36,6 +36,13 @@ function delay(n) {
     });
 };
 
+function reload() {
+    setTimeout(() => {
+    for(let i = 0; i < 1; i++){
+        location.reload();
+    }
+}, 250)
+}
 
 barba.init({
     sync: true,
@@ -47,13 +54,12 @@ barba.init({
             pageTransition();
             await delay(1500);
             done();
+            reload();
+
         },
-       async enter(data) {
-            contentAnimation();
+        async enter(data) {
+
         },
-          async beforeOnce(data) {
-            delay()
-          },
         async once(data) {
             contentAnimation();
           }
