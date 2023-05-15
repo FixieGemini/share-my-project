@@ -4,6 +4,8 @@
 ## Description
 A website for my UofA development boot camp cohort to share their group projects and compliment one another on their acheivement. Users will be prompted to sign up on their first visit to the site which will create their personal profile. Once logged they are directed to the home page which lists any projects that have been added so far. If they navigate to their profile then can add new projects or delete old ones. From the home page, if the user clicks on a project they will be shown a page with the project details as well as a comment section where they can write kind words to their fellow classmates. 
 
+![sharemyproject](https://github.com/FixieGemini/share-my-project/assets/109640240/da883190-3063-461f-bd79-661760599b22)
+
 ## User Story
 ```md 
 AS a full stack development boot camp student 
